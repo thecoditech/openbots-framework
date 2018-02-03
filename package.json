@@ -1,0 +1,41 @@
+{
+  "name": "@tob/framework",
+  "version": "0.1.0",
+  "description": "The Open Bots framework",
+  "main": "dist/Bot",
+  "scripts": {
+    "build": "npm run build-ts && npm run tslint",
+    "build-ts": "tsc",
+    "start": "npm run build && npm run watch",
+    "test": "ava",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "watch-ts": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theopenbots/framework.git"
+  },
+  "keywords": [
+    "bot",
+    "framework",
+    "theopenbots"
+  ],
+  "author": "Emmanuel Gautier <npm@emmanuelgautier.fr>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/theopenbots/framework/issues"
+  },
+  "homepage": "https://github.com/theopenbots/framework#readme",
+  "devDependencies": {
+    "@types/express": "^4.11.0",
+    "@types/lodash": "^4.14.92",
+    "@types/node": "^9.3.0",
+    "tslint": "^5.9.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "rxjs": "^5.5.6",
+    "typescript": "^2.6.2"
+  }
+}
